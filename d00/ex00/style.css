@@ -1,0 +1,35 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   style.css                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: thninh <thninh@student.42.fr>              +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2017/09/26 21:43:19 by thninh            #+#    #+#             */
+/*   Updated: 2017/09/26 21:43:52 by thninh           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+body
+{
+	background-color: pink;
+}
+
+h1
+{
+	color: white;
+	text-align: center;
+}
+
+#bloc
+{
+	display: flex;
+	justify-content: center;
+}
+
+#login
+{
+	text-align: right;
+	font-style: italic;
+	font-size: 20px;
+}
