@@ -16,7 +16,7 @@ form
 form input[type="text"]
 {
 	width: 70%;
-	font-size: 18px;
+	font-size: 16px;
 	border: 3px solid #A9A9A9;
 	border-bottom-color: #E0E0E0;
 	border-right-color: #E0E0E0;
@@ -25,7 +25,7 @@ form input[type="text"]
 form input[type="submit"]
 {
 	width: 18%;
-	font-size: 16px;
+	font-size: 14px;
 	margin-left: 3px;
 	background-color: #D8D8D8;
 }
