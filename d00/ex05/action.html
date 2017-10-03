@@ -1,0 +1,63 @@
+<!-- *********************************************************************** -->
+<!--                                                                         -->
+<!--                                                      :::      ::::::::  -->
+<!-- action.html                                        :+:      :+:    :+:  -->
+<!--                                                  +:+ +:+         +:+    -->
+<!-- By: thninh <marvin@42.fr>                      +#+  +:+       +#+       -->
+<!--                                              +#+#+#+#+#+   +#+          -->
+<!-- Created: 2017/10/03 17:01:07 by thninh            #+#    #+#            -->
+<!-- Updated: 2017/10/03 17:01:09 by thninh           ###   ########.fr      -->
+<!--                                                                         -->
+<!-- *********************************************************************** -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="scumm.css" />
+		<title>Scumm</title>
+	</head>
+	<body>
+		<div class="page">
+			<header>
+				<img class="logo" src="resources/day_of_the_42.png" alt="Logo" title="Logo"/>
+				<img class="loupe" src="resources/loupe.png" alt="Recherche" title="Recherche"/>
+				<div class="choix">
+					<a href="http://www.disney.com">
+						<img class="reload" src="resources/reload.png" alt="Recommencer" title="Recommencer" />
+					</a>
+					<a href="http://www.relaischateaux.com">
+						<img class="exit" src="resources/close.gif" alt="Deconnecter" title="Deconnecter" />
+					</a>
+				</div>
+			</header>
+			<div class="tab1">
+				<a href="avancer.html"><img src="resources/arrow.png" alt="avancer" title="avancer" /></a>
+				<img src="resources/main.png" alt="Prendre" title="Prendre" />
+				<img class="remarque" src="resources/oeil.png" alt="Regarder" title="Regarder" />
+				<img src="resources/outil.png" alt="Utiliser" title="Utiliser" />
+				<a href="parler.html"><img src="resources/chat-icon.png" alt="Parler" title="Parler" /></a>
+			</div>
+			<div class="image_centrale">
+				<img id="cluster" src="resources/bienvenue.gif" title="bienvenue">
+				<form>
+					<p>Vous <span class="grand">entrez</span> alors dans une grande piece remplie d'<span class="ombre">ordinateurs</span>...<br />
+						<em>- vous voulez quelques choses?</em>
+					</p>
+					<input type="text" list="options" name="option">
+					<datalist id="options">
+						<option value="Livre">
+						<option value="Serviette">
+						<option value="briaue">
+					</datalist>
+					<input type="submit" value="Repondre">
+				</form>
+			</div>
+			<div class="tab2">
+				<img src="resources/book.png" alt="lire" title="Notre bibliothèque" />
+				<img src="resources/towel.png" alt="Serviette" title="Serviette" />
+				<div class="multi_brique" title="Difficult"></div>
+			</div>
+		</div>
+	</body>
+</html>
