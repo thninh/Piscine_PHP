@@ -1,0 +1,117 @@
+table
+{
+  width: 100%;
+}
+
+.imgheader
+{
+  float: right;
+}
+
+h1
+{
+  text-align: center;
+  margin: 10px;
+}
+
+h2
+{
+  text-align: center;
+  margin: 10px;
+}
+
+td
+{
+  width: 5.555555%;
+}
+
+.colorfond1
+{
+  background-color: #808000;
+  border: 2px black solid;
+}
+
+.colorfond2
+{
+  background-color: #FFA07A;
+  border: 2px black solid;
+}
+
+.colorfond3
+{
+  background-color: #FFFFFF;
+  border: 2px black solid;
+}
+
+.colorfond4
+{
+  background-color: #E9967A;
+  border: 2px black solid;
+}
+
+.colorfond5
+{
+  background-color: #3CB371;
+  border: 2px black solid;
+}
+
+.colorfond6
+{
+  background-color: #4169E1;
+  border: 2px black solid;
+}
+
+.colorfond7
+{
+  background-color: #A9A9A9;
+  border: 2px black solid;
+}
+
+.colorfond8
+{
+  background-color: #DAA520;
+  border: 2px black solid;
+}
+
+.colorfond9
+{
+  background-color: #FFDAB9;
+}
+
+.colorfond10
+{
+  background-color: #FFE4B5;
+}
+
+.colorfond11
+{
+  background-color: #D3D3D3;
+  border: 2px black solid;
+}
+
+.colorfond12
+{
+  background-color: #87CEFA;
+  border: 2px black solid;
+}
+
+.colorfond13
+{
+  background-color: #FFE4E1;
+  border: 2px black solid;
+}
+
+p
+{
+  margin: 1px;
+}
+
+p.massatomique
+{
+  text-align: right;
+}
+
+p.unknown
+{
+  text-align: center;
+}
