@@ -1,1 +1,1 @@
-CREATE DATABASE db_thninh
+CREATE DATABASE db_thninh;
