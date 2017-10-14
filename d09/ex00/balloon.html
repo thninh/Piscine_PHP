@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Balloon</title>
+		<style>
+			div.balloon
+			{
+				height: 200px;
+				width: 200px;
+				background-color: red;
+				border-radius: 50%;
+			}
+		</style>
+		<script>
+			var tab = {0:"#ff0000", 1:"#00ff00", 2:"#0000ff"};
+			// var balloon = document.getElementById('my_balloon');
+			var k;
+			var i = 0;
+			var s = 200;
+
+			function control_size_balloon(i)
+			{
+				k.style.height = s + 'px';
+				k.style.width = s + 'px';
+				k.style.backgroundColor = tab[i];
+			}
+
+			function click()
+			{
+				s += 10;
+				if (s > 420)
+					s = 200;
+				i++;
+				if (i > 2)
+					i = 0;
+				control_size_balloon(i);
+			}
+
+			function mouse()
+			{
+				s -= 5;
+				if (s < 200)
+					s = 200;
+				i--;
+				if (i < 0)
+					i = 2;
+				control_size_balloon(i);
+			}
+
+			window.onload = function ()
+			{
+				k = document.querySelector("#my_balloon");
+				k.addEventListener("click", click);
+				/*mouseleave -> quand le souris quitte le circle, il va diminuer*/
+				k.addEventListener("mouseleave", mouse);
+			}
+		</script>
+	</head>
+	<body>
+		<div class="balloon" id="my_balloon"></div>
+	</body>
+</html>
