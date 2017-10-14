@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Balloon</title>
+		<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+		<style>
+			div.balloon
+			{
+				height: 200px;
+				width: 200px;
+				background-color: red;
+				border-radius: 50%;
+			}
+		</style>
+		<script>
+			var tab = {0:"red", 1:"green", 2:"blue"};
+			var k;
+			var i = 0;
+			var s = 200;
+			
+			function control_size_balloon(i)
+			{
+				k.css('height', s);
+				k.css('width', s);
+				k.css('backgroundColor', tab[i]);
+			}
+			
+			function click()
+			{
+				s += 10;
+				if (s > 420)
+					s = 200;
+				i++;
+				if (i > 2)
+					i = 0;
+				control_size_balloon(i);
+			}
+			
+			function mouse()
+			{
+				s -= 5;
+				if (s < 200)
+					s = 200;	
+				i--;
+				if (i < 0)
+					i = 2;
+				control_size_balloon(i);
+			}
+			
+			$(document).ready(function (){
+				k = $('#my_balloon');
+				k.click(click);
+				k.mouseleave(mouse);
+			});
+		</script>
+	</head>
+	<body>
+		<div class="balloon" id="my_balloon"></div>
+	</body>
+</html>

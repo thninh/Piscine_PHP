@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>It's over 9000</title>
+		<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+		<style>
+			.style
+			{
+				height: 40%;
+				width: 40%;
+				margin: 30%;
+				padding: 5%;
+				background-color: #2E8B57;
+				text-align: center;
+			}
+		</style>
+		<script>
+			var cal;
+			var num1;
+			var num2;
+			var option;
+
+			function res (aff){
+				alert (aff);
+				console.log(aff);
+			}
+
+			function calcul(event) {
+				event.preventDefault();
+				var x = Number(num1.val());
+				var y = Number(num2.val());
+				if (parseInt(x, 10) == x && parseInt(y, 10) == y && x >= 0 && y >= 0) {
+					if(option.val() === 'add')
+						res (x + y);
+					else if (option.val() === 'sub')
+						res (x - y);
+					else if (option.val() === 'mul')
+						res (x * y);
+					else if (option.val() === 'div') {
+						if (y == 0)
+							res ("It's over 9000!");
+						else
+							res (x / y);
+					}
+					else {
+						if (y == 0)
+							res ("It's over 9000!");
+						else
+							res (x % y);
+					}
+				}
+				else {
+					alert("Error :(");
+					return false;
+				}
+			}
+
+			$(document).ready(function() {
+				cal = $('#my_calculator');
+				num1 = $('#num1');
+				option = $('#option');
+				num2 = $('#num2');
+				cal = $(document).submit(calcul);
+				setInterval(function(){
+					alert('Please, use me...')}, 30000)
+			});
+		</script>
+	</head>
+	<body>
+		<div class="style">
+			<h1>Calculator</h1>
+			<form id="my_calculator">
+				<input type="text" id="num1"><br />
+				<select id="option">
+					<option value="add">+</option>
+					<option value="sub">-</option>
+					<option value="mul">*</option>
+					<option value="div">/</option>
+					<option value="mod">%</option>
+				</select><br />
+				<input type="text" id="num2"><br />
+				<input type="submit" value="Try me!">
+			</form>
+		</div>
+	</body>
+</html>
