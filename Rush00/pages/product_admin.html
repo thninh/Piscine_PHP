@@ -1,0 +1,20 @@
+<div class="product_admin">
+	<div class="picture">
+		<img src="<(picture)>"/>
+	</div>
+	<div>
+		<form action="admin.php" method="post">
+			<input type="hidden" name="object_type" value="product">
+			<input type="hidden" name="id" value="<(id)>">
+			<input name="name" value="<(name)>" placeholder="name">
+			<input name="version" value="<(version)>" placeholder="version">
+			<input name="price" value="<(price)>" placeholder="price">
+			<input name="description" value="<(description)>" placeholder="description">
+			<div class="product_category">
+				<(*page:product_category_admin)>
+			</div>
+			<input name="submit" type="submit" value="Modify">
+			<input name="submit" type="submit" value="Delete">
+		</form>
+	</div>
+</div>

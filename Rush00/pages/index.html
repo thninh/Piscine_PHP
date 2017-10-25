@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Kids toys</title>
+		<link rel="icon" href="pictures/logo_page2.jpg" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/objects.css" />
+	</head>
+	<body class="set_page">
+		<header>
+			<img class="logo_header" src="pictures/logo_header2.gif" alt="logo"/>
+			<div class="control_logged">
+				<form action="index.php" method="post">
+					<input type="hidden" name="button_action" value="view_cart" />
+					<input id="view_cart" class="button" type="submit" value="" alt="cart" title="view cart" />
+				</form>
+				<form action="index.php" method="post">
+					<input type="hidden" name="button_action" value="view_shop" />
+					<input id="view_shop" class="button" type="submit" value="" alt="cart" title="view cart" />
+				</form>
+				<form action="index.php" method="post">
+					<input type="hidden" name="button_action" value="view_command" />
+					<input id="view_command" class="button" type="submit" value="" alt="cart" title="view cart" />
+				</form>
+				<(*page:signedin)>
+				<(*page:pleasesignin)>
+			</div>
+		</header>
+		<h1 class="logo_du_page">Kids Toys</h1><br />
+		<form>
+			<input class="research" type="text" name="categories" />
+			<input class="submit" type="submit" name="submit" value="research" />
+		</form>
+		<div class="elem">
+        	<ul class="menu">
+          		<li>UP TO 2 YEARS</li>
+          		<li><a href="soft_toys.html">Soft Toys</a></li>
+          		<li><a href="#">Rocking Rides</a></li>
+          		<li><a href="#">Musical Toys</a></li>
+          		<li><a href="#">Outdoor & Sports</a></li>
+        	</ul>
+        	<ul class="menu">
+          		<li>3 - 4 YEARS</li>
+          		<li><a href="#">Musical Toys</a></li>
+          		<li><a href="#">Dolls</a></li>
+          		<li><a href="#">Push & Pedal Rides</a></li>
+          		<li><a href="#">Swing Cars</a></li>
+          		<li><a href="#">Tricycles</a></li>
+        	</ul>
+        	<ul class="menu">
+          		<li>5 - 7 YEARS</li>
+          		<li><a href="#">Outdoor & Sports</a></li>
+          		<li><a href="#">Educational Toys</a></li>
+          		<li><a href="#">Bicycles</a></li>
+          		<li><a href="#">Dolls & Doll house</a></li>
+          		<li><a href="#">Action Toys & Figures</a></li>
+        	</ul>
+        	<ul class="menu">
+          		<li>8 YEARS & ABOVE</li>
+          		<li><a href="#">Action Toys & Figures</a></li>
+          		<li><a href="#">Indoor & Board Games</a></li>
+          		<li><a href="#">Die Cast Vehicle</a></li>
+          		<li><a href="#">Educational Toys</a></li>
+        	</ul>
+      </div>
+	  <(page:product_client_list)>
+	  <(page:cart_client)>
+	  <(page:command_client_list)>
+	  <h1 class="option">More Categories</h1>
+	  <div class="categories">
+		<figure>
+			<a href="soft_toys.html"><img src="pictures/soft_toys.jpg" alt="toys" title="Soft toys"></a>
+			<figcaption>Soft toys</figcaption>
+		</figure>
+		<figure>
+			<a href="musical_toys.html"><img src="pictures/musical_toys.jpg" alt="musictoys" title="musical toys"></a>
+			<figcaption>musical toys</figcaption>
+		</figure>
+		<figure>
+			<a href="educational_toys.html"><img src="pictures/educational_toys.jpg" alt="edutoys" title="educational toys"></a>
+			<figcaption>educational toys</figcaption>
+		</figure>
+		<figure>
+			<a href="outdoor_sport.html"><img src="pictures/outdoor_sport.jpg" alt="outdoor_sport" title="Outdoor_sports"></a>
+			<figcaption>Outdoor sports</figcaption>
+		</figure>
+		<figure>
+			<a href="Dolles.html"><img src="pictures/Dolles.jpg" alt="Dolls" title="Doll's house"></a>
+			<figcaption>Doll's house</figcaption>
+		</figure>
+	  </div>
+
+	  <h1 class="option">TOP BRANDS</h1>
+	  <footer class="marques">
+		  <div><img src="pictures/barbie.jpg" alt="barBie"></div>
+		  <div><img src="pictures/disney.jpg" alt="disney"></div>
+		  <div><img src="pictures/fisher-price.jpg" alt="fisher_price"></div>
+		  <div><img src="pictures/funskool.jpg" alt="funskopp"></div>
+		  <div><img src="pictures/Lego.jpg" alt="Lego"></div>
+		  <div><img src="pictures/mee_mee.jpg" alt="meemee"></div>
+		  <div><img src="pictures/nerf.jpg" alt="nelf"></div>
+		  <div><img src="pictures/bsa.jpg" alt="bsa"></div>
+	  </footer>
+
+	</body>
+</html>

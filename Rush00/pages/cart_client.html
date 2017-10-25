@@ -1,0 +1,9 @@
+<div class="cart_client">
+	<(page:cart_title)>
+	<h2>Your cart contain <(quantity)> products for $<(price_total)> total !</h2>
+	<(*page:product_cart_client)>
+	<form action="index.php" method="post">
+		<input type="submit" name="Empty Cart" value="Empty Cart">
+		<input type="submit" name="Valid" value="Valid">
+	</form>
+</div>

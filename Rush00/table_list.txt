@@ -1,0 +1,1 @@
+user,user_address,user_command,command_product,product,category,product_category,command
